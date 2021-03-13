@@ -15,4 +15,5 @@
 
     $naujas = new Users();
     $naujas->echoAllUsers('Alius');
+    var_dump($naujas);
 ?>

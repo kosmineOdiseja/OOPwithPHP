@@ -4,7 +4,7 @@
         var $apillido; // is pradziu savybems nereikia apibrezineti jokiu reiksmiu/verciu.
         var $email; // nes vertes reiksmes naudosime is naujo klases objekto su simboliu junginiu ->
         
-        function getAll(){ 
+        function get_All(){ 
             
         }
 
@@ -22,17 +22,19 @@
         var $db_table;
 
         function getAll(){
-            $this->db_table = 'users';
+            $this->db_table = 'albatros';
         }
         function echoAll(){
-            echo $this->get_all();
+            echo $this->getAll();
         }
     }// kaip matome $this galima naudoti tiek sabybems tiek methodams. Tai yra vienas is OOP tikslu.
 
-    class Math{
+
+        // kostantantos 
+    class AccesToConst{
         const PI = 3.14; // tai yra konstanta, kuri gali buti klaseje, bet gali buti ir uz klases ribu, kad butu panaudojama N kartu skripte eigoje.
 
         function echoPi(){
-            echo math::PI; // vietoj math dar galima rasyti self::  bet negalima rasyti $this, tai constanta nera kintamasis.
+            echo AccesToConst::PI; // vietoj self dar galima rasyti classes pavadinima pzz AccesToConst:: bet negalima rasyti $this, tai constanta nera kintamasis.
         }
     } // ir tai nejucia prakalbome apie statiniu atributu ir methodu panaudojima su dviem dvitaskiais. :: 
