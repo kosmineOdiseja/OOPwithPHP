@@ -22,7 +22,7 @@
         var $db_table;
 
         function getAll(){
-            $this->db_table = 'albatros';
+            $this->db_table = 'users';
         }
         function echoAll(){
             echo $this->getAll();

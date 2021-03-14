@@ -6,6 +6,6 @@
         }
     }
     $klientai = new Klientai;
-    $klientas->getvardasPavarde('Alius Bosas');
+    $klientai->getvardasPavarde('Alius Bosas');
 
 ?>
